@@ -1,0 +1,39 @@
+.home {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .home__title {
+    min-height: 100px;
+    .home__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70px;
+      margin-top: 4rem;
+
+      button {
+        padding: 1rem;
+        margin: auto;
+        border-style: none;
+        border-radius: 50%;
+        background: transparent;
+        font-size: 2vw;
+        @include transition-ease;
+        &:hover {
+          background: black;
+          color: white;
+          transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 1vw;
+      line-height: 1.2;
+      font-size: 3vw;
+      text-align: center;
+      color: black;
+    }
+  }
+}
