@@ -23,8 +23,10 @@ window.addEventListener("load", () => {
   // create video element, add classlist, set variables to true, insert after header element
   const bgVideo = document.createElement("video");
   bgVideo.classList.add("home__vid");
+  bgVideo.src = "./video/home3.mp4";
   bgVideo.loop = true;
   bgVideo.autoplay = true;
+  bgVideo.muted = true;
   document.querySelector("header").insertAdjacentElement("afterend", bgVideo);
 
   //add event listen. for each button do something
