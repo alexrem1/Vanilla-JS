@@ -141,8 +141,8 @@ header {
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .menu-btn-burger {
@@ -152,8 +152,8 @@ header {
   width: 24px;
   height: 3px;
   background: black;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .menu-btn-burger::before {
@@ -163,8 +163,8 @@ header {
   width: 28px;
   height: 3px;
   background: black;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .menu-btn-burger::after {
@@ -174,8 +174,8 @@ header {
   width: 20px;
   height: 3px;
   background: black;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .menu-btn-burger.open {
@@ -230,8 +230,8 @@ header {
   list-style-type: none;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .nav .menu-nav.open {
@@ -242,8 +242,8 @@ header {
 .nav .menu-nav-item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .nav .menu-nav-item.open {
@@ -265,8 +265,8 @@ header {
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .nav .menu-nav-link:hover {
@@ -310,6 +310,48 @@ header {
   min-height: 100px;
 }
 
+.home .home__title .home__text {
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: translate(-200%);
+          transform: translate(-200%);
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+.home .home__title .home__text.transition {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.home .home__title .home__text h2 {
+  margin: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  line-height: 1.2;
+  font-size: 1.5vw;
+  color: black;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0.25;
+  -webkit-transition: all 3s ease-in-out 1s;
+  transition: all 3s ease-in-out 1s;
+}
+
+.home .home__title .home__text h2:hover {
+  cursor: default;
+}
+
+.home .home__title .home__text h2.transition {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .home .home__title .home__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,22 +373,24 @@ header {
   border-radius: 50%;
   background: transparent;
   font-size: 2vw;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .home .home__title .home__button button:hover {
-  background: black;
+  background: rgba(0, 0, 0, 0.32);
   color: white;
-  -webkit-transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
 }
 
 .home .home__title h1 {
   text-transform: uppercase;
   letter-spacing: 1vw;
   line-height: 1.2;
-  font-size: 3vw;
   text-align: center;
   color: black;
 }

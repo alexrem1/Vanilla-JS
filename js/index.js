@@ -55,6 +55,24 @@ function home() {
     .insertAdjacentElement("afterend", homeContainer);
   homeContainer.append(newHomeTitleContainer);
   newHomeTitleContainer.append(newHomeTitle);
+
+  //create animations div and h2 element, add class and modify innerhtml
+  const animationsTextContainer = document.createElement("div");
+  const animationsText = document.createElement("h2");
+  animationsTextContainer.classList.add("home__text");
+  animationsText.innerHTML = "and Animations";
+
+  //insert animations text into div and then into homecontainer after the h1
+  animationsTextContainer.insertAdjacentElement("afterbegin", animationsText);
+  console.log(animationsTextContainer);
+  newHomeTitleContainer
+    .querySelector("h1")
+    .insertAdjacentElement("afterend", animationsTextContainer);
+
+  window.addEventListener("mousemove", () => {
+    animationsTextContainer.classList.add("transition");
+    animationsText.classList.add("transition");
+  });
 }
 
 home();
