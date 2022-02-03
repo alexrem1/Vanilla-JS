@@ -36,11 +36,11 @@ const checkPlaying = (song) => {
   if (song.paused) {
     song.play();
     video.play();
-    play.src = "./svg/pause.svg";
+    play.src = "./audio/svg/pause.svg";
   } else {
     song.pause();
     video.pause();
-    play.src = "./svg/play.svg";
+    play.src = "./audio/svg/play.svg";
   }
 };
 
@@ -51,7 +51,6 @@ replay.addEventListener("click", function () {
 const restartSong = (song) => {
   let currentTime = song.currentTime;
   song.currentTime = 0;
-  console.log("ciao");
 };
 
 //select sound
@@ -82,7 +81,7 @@ song.ontimeupdate = function () {
   if (currentTime >= fakeDuration) {
     song.pause();
     song.currentTime = 0;
-    play.src = "./svg/play.svg";
+    play.src = "./audio/svg/play.svg";
     video.pause();
   }
 };

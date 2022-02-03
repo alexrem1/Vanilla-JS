@@ -81,7 +81,7 @@ header {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background: black;
+    background: rgba(0, 0, 0, 0.933);
     list-style-type: none;
     transform: translateY(-100%);
     @include transition-ease;
